@@ -1,0 +1,10 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Convite do Nivra</title>
+<style>body{font:18px/1.5 -apple-system,system-ui,sans-serif;padding:48px 20px;max-width:640px;margin-inline:auto;color:#1a1410;background:#fff7ea}a{color:#a85a10}@media(prefers-color-scheme:dark){body{background:#120e0b;color:#f4ece2}a{color:#f7b260}}</style>
+<h1 id="t">Página não encontrada</h1><p id="m"><a href="/">Voltar ao início</a></p>
+<script>
+// Hosts without per-path pages answer /convite/CODE here. The code only opens the app; accepting is confirmed inside it.
+const c=/^\/convite\/([A-Za-z0-9]{8})\/?$/.exec(location.pathname);
+if(c){const u="questaodefoco://convite/"+c[1];document.getElementById("t").textContent="Convite para ser fiador";
+document.getElementById("m").innerHTML='<a href="'+u+'">Abrir no Nivra</a>. Precisa do app instalado no iPhone.';location.replace(u)}
+</script></html>
